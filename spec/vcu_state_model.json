@@ -1,0 +1,19 @@
+{
+  "states": [
+    "OFF",
+    "BOOT",
+    "IDLE",
+    "DRIVE",
+    "REGEN",
+    "FAULT",
+    "EMERGENCY_LOCKDOWN"
+  ],
+  "transitions": {
+    "BOOT": ["IDLE", "FAULT"],
+    "IDLE": ["DRIVE", "FAULT"],
+    "DRIVE": ["REGEN", "FAULT", "IDLE"],
+    "REGEN": ["DRIVE", "FAULT"],
+    "FAULT": ["EMERGENCY_LOCKDOWN"],
+    "EMERGENCY_LOCKDOWN": ["OFF"]
+  }
+}
