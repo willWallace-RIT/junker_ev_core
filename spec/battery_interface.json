@@ -1,0 +1,20 @@
+{
+  "cell_types_supported": [
+    "18650",
+    "21700",
+    "prismatic",
+    "pouch",
+    "mixed_second_life"
+  ],
+  "pack_requirements": {
+    "nominal_voltage": "float",
+    "max_discharge_current": "float",
+    "bms_required": true
+  },
+  "state_fields": {
+    "soc": "float",
+    "soh": "float",
+    "temperature": "float",
+    "balance_state": "array"
+  }
+}
