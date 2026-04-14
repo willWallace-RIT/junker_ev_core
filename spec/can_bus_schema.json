@@ -1,0 +1,38 @@
+{
+  "version": "0.1",
+  "messages": [
+    {
+      "id": 256,
+      "name": "THROTTLE_REQUEST",
+      "fields": {
+        "torque_request": "float",
+        "mode": "uint8"
+      }
+    },
+    {
+      "id": 257,
+      "name": "BRAKE_REQUEST",
+      "fields": {
+        "brake_pressure": "float",
+        "regen_allowed": "bool"
+      }
+    },
+    {
+      "id": 300,
+      "name": "BATTERY_STATUS",
+      "fields": {
+        "soc": "float",
+        "voltage": "float",
+        "temperature": "float"
+      }
+    },
+    {
+      "id": 400,
+      "name": "FAULT_STATE",
+      "fields": {
+        "critical": "bool",
+        "code": "uint16"
+      }
+    }
+  ]
+}
