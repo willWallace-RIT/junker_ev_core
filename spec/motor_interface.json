@@ -1,0 +1,21 @@
+{
+  "motor_types": [
+    "AC_INDUCTION",
+    "BLDC",
+    "HUB_MOTOR",
+    "HYBRID_REPURPOSED"
+  ],
+  "required_fields": {
+    "max_rpm": "float",
+    "max_torque_nm": "float",
+    "voltage_range": "tuple",
+    "temperature_limit": "float",
+    "control_protocol": "CAN | PWM | UART"
+  },
+  "standard_commands": [
+    "set_torque",
+    "set_rpm_limit",
+    "enable_regen",
+    "disable_output"
+  ]
+}
